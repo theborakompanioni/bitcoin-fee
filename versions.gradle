@@ -1,0 +1,25 @@
+ext {
+    guavaVersion = '33.0.0-jre'
+    testcontainersVersion = '1.19.8'
+    httpComponentsVersion = '4.4.14'
+    httpComponentsClientVersion = '4.5.13'
+    grpcVersion = '1.56.0' // must be compatible with lightningj
+    protobufVersion = '3.22.3'
+    protocVersion = protobufVersion
+    jmoleculesBomVersion = '2023.1.6'
+    bytebuddyPluginVersion = '1.15.3' // keep in sync with `jmoleculesBomVersion`
+    acinqSecp256k1KmpVersion = '0.15.0'
+    acinqBitcoinKmpVersion = '0.20.0' // keep in sync with `acinqSecp256k1KmpVersion`
+    acinqLightningKmpVersion = '1.8.4' // keep in sync with `acinqBitcoinKmpVersion`
+    sqliteVersion = '3.46.1.3'
+    hibernateCommunityDialectsVersion = '6.6.1.Final'
+    lombokVersion = '1.18.30'
+    springdocOpenApiVersion = '2.3.0'
+    checkstyleVersion = '10.3.4'
+    findsecbugsPluginVersion = '1.12.0'
+    springBootGradlePluginVersion = '3.3.5'
+    bitcoinSpringBootStarterVersion = '0.14.0'
+    protobufGradleVersion = '0.9.4'
+}
+
+// hack: 2021-11-10T00:00Z - change this timestamp to invalidate GitHub Actions gradle caches.

@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+description = 'bitcoin core jsonrpc api fee client package'
+
+dependencies {
+    api project(':bitcoin-fee:bitcoin-fee-estimate-core')
+
+    implementation "io.github.theborakompanioni:bitcoin-jsonrpc-client-core:${bitcoinSpringBootStarterVersion}"
+
+    testImplementation "io.github.theborakompanioni:bitcoin-jsonrpc-client-starter:${bitcoinSpringBootStarterVersion}"
+    integTestImplementation "io.github.theborakompanioni:spring-testcontainer-bitcoind-starter:${bitcoinSpringBootStarterVersion}"
+}
