@@ -1,6 +1,6 @@
 [![Build](https://github.com/theborakompanioni/bitcoin-fee/actions/workflows/build.yml/badge.svg)](https://github.com/theborakompanioni/bitcoin-fee/actions/workflows/build.yml)
 [![GitHub Release](https://img.shields.io/github/release/theborakompanioni/bitcoin-fee.svg?maxAge=3600)](https://github.com/theborakompanioni/bitcoin-fee/releases/latest)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.theborakompanioni/bitcoin-jsonrpc-client-core.svg?maxAge=3600)](https://search.maven.org/#search|g%3A%22io.github.theborakompanioni%22)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.theborakompanioni/bitcoin-fee-starter.svg?maxAge=3600)](https://search.maven.org/#search|g%3A%22io.github.theborakompanioni%22)
 [![License](https://img.shields.io/github/license/theborakompanioni/bitcoin-fee.svg?maxAge=2592000)](https://github.com/theborakompanioni/bitcoin-fee/blob/master/LICENSE)
 
 
