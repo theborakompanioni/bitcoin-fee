@@ -25,6 +25,7 @@ The following providers are available out of the box:
 ## Table of Contents
 
 - [Install](#install)
+- [Example](#example)
 - [Development](#development)
 - [Contributing](#contributing)
 - [Resources](#resources)
@@ -54,6 +55,14 @@ implementation "io.github.theborakompanioni:bitcoin-fee-starter:${bitcoinFeeVers
     <version>${bitcoinFeeVersion}</version>
 </dependency>
 ```
+
+## Example
+Start the example application with
+```shell
+./gradlew -p bitcoin-fee/bitcoin-fee-example-application bootRun --args="--spring.profiles.active=development --debug"
+```
+
+Then visit `http://localhost:8080` in your browser.
 
 ## Development
 
