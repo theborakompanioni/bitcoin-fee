@@ -365,6 +365,7 @@ subprojects {
 configure(subprojects.findAll { project -> project.name.indexOf('bitcoin-fee-estimate-btcdotcom') == 0 }) {
     test.onlyIf { isIdeEnv || project.hasProperty('feeProviderTest') }
     integrationTest.onlyIf { isIdeEnv || project.hasProperty('feeProviderTest') }
+    e2eTest.onlyIf { isIdeEnv || project.hasProperty('feeProviderTest') }
 }
 
 configure(subprojects.findAll { project -> project.subprojects.isEmpty() &&
