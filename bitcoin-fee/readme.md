@@ -18,14 +18,16 @@ See fee distribution: https://jochen-hoenicke.de/queue/#0,2h
 - [x] Blockchair API
 - [x] BlockCypher API
 - [x] Blockstream.info API
-- [x] BTC.com API
-- [x] earn.com API
 - [x] mempool.space API
 - [x] Strike Blended Fee Estimate API
 
 Incubating: 
 - [ ] https://btcpriceequivalent.com/fee-estimates -> https://btcpriceequivalent.com/n/{n}
 - [ ] whatthefee.io
+
+Removed:
+- BTC.com API (discontinued)
+- earn.com API (discontinued)
 
 # Resources
 - https://b10c.me/blog/003-a-list-of-public-bitcoin-feerate-estimation-apis/
@@ -181,54 +183,6 @@ Incubating:
 
 
 
-### BTC.com API
-- [`https://btc.com/service/fees/distribution`](https://btc.com/service/fees/distribution)
-- Last check: 2020-11-14
-- Unit of measurement: **`sat/Byte`**
-
-
-```json
-{
-  "tx_size": [ ... ],
-  "tx_size_count": [ ... ],
-  "tx_size_divide_max_size": [ ... ],
-  "tx_duration_time_rate": [ ... ],
-  "fees_recommended": {
-    "one_block_fee": 14
-  },
-  "update_time": "1563456789"
-}
-```
-
-
-
-### earn.com API
-- [`https://bitcoinfees.earn.com/api/v1/fees/recommended`](https://bitcoinfees.earn.com/api/v1/fees/recommended)
-- [`https://bitcoinfees.earn.com/api/v1/fees/list`](https://bitcoinfees.earn.com/api/v1/fees/list)
-- [documentation](https://bitcoinfees.earn.com/api)
-- Last check: 2020-11-13
-- Unit of measurement: **`sat/Byte`**
-
-`GET /api/v1/fees/recommended`:
-```json
-{
-  "fastestFee": 44,
-  "halfHourFee": 44,
-  "hourFee": 4
-}
-```
-
-`GET /api/v1/fees/list`:
-```json
-{ "fees": [ 
-  {"minFee":0,"maxFee":0,"dayCount":545,"memCount":87,
-  "minDelay":4,"maxDelay":32,"minMinutes":20,"maxMinutes":420},
-  [...]
- ] }
-```
-
-
-
 ### mempool.space API
 - [`https://mempool.space/api/v1/fees/recommended`](https://mempool.space/api/v1/fees/recommended)
 - [`https://mempool.space/api/v1/fees/mempool-blocks`](https://mempool.space/api/v1/fees/mempool-blocks)
@@ -294,5 +248,54 @@ Incubating:
 }
 ```
 
+---
+
+### BTC.com API (removed)
+- [`https://btc.com/service/fees/distribution`](https://btc.com/service/fees/distribution)
+- Last check: 2025-01-23
+- Unit of measurement: **`sat/Byte`**
+
+
+```json
+{
+  "tx_size": [ ... ],
+  "tx_size_count": [ ... ],
+  "tx_size_divide_max_size": [ ... ],
+  "tx_duration_time_rate": [ ... ],
+  "fees_recommended": {
+    "one_block_fee": 14
+  },
+  "update_time": "1563456789"
+}
+```
+
+
+
+### earn.com API (removed)
+- [`https://bitcoinfees.earn.com/api/v1/fees/recommended`](https://bitcoinfees.earn.com/api/v1/fees/recommended)
+- [`https://bitcoinfees.earn.com/api/v1/fees/list`](https://bitcoinfees.earn.com/api/v1/fees/list)
+- [documentation](https://bitcoinfees.earn.com/api)
+- Last check: 2025-01-23
+- Unit of measurement: **`sat/Byte`**
+
+`GET /api/v1/fees/recommended`:
+```json
+{
+  "fastestFee": 44,
+  "halfHourFee": 44,
+  "hourFee": 4
+}
+```
+
+`GET /api/v1/fees/list`:
+```json
+{ "fees": [ 
+  {"minFee":0,"maxFee":0,"dayCount":545,"memCount":87,
+  "minDelay":4,"maxDelay":32,"minMinutes":20,"maxMinutes":420},
+  [...]
+ ] }
+```
+
+---
 
 All text and images in this readme.md are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
