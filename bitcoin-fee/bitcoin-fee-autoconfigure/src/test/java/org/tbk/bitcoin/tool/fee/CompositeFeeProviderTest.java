@@ -5,7 +5,7 @@ import org.springframework.boot.test.context.runner.ApplicationContextRunner;
 import org.tbk.bitcoin.tool.fee.bitgo.config.BitgoFeeClientAutoConfiguration;
 import org.tbk.bitcoin.tool.fee.blockchaininfo.config.BlockchainInfoFeeClientAutoConfiguration;
 import org.tbk.bitcoin.tool.fee.config.BitcoinFeeClientAutoConfiguration;
-import org.tbk.bitcoin.tool.fee.earndotcom.config.EarndotcomFeeClientAutoConfiguration;
+import org.tbk.bitcoin.tool.fee.strike.config.StrikeFeeClientAutoConfiguration;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -26,7 +26,7 @@ class CompositeFeeProviderTest {
 
         this.contextRunner.withUserConfiguration(
                 BitcoinFeeClientAutoConfiguration.class,
-                EarndotcomFeeClientAutoConfiguration.class
+                BlockchainInfoFeeClientAutoConfiguration.class
         ).run(context -> {
             CompositeFeeProvider compositeFeeProvider = context.getBean(CompositeFeeProvider.class);
             assertThat(compositeFeeProvider, is(notNullValue()));
@@ -36,8 +36,8 @@ class CompositeFeeProviderTest {
 
         this.contextRunner.withUserConfiguration(
                 BitcoinFeeClientAutoConfiguration.class,
-                EarndotcomFeeClientAutoConfiguration.class,
                 BlockchainInfoFeeClientAutoConfiguration.class,
+                StrikeFeeClientAutoConfiguration.class,
                 BitgoFeeClientAutoConfiguration.class
         ).run(context -> {
             CompositeFeeProvider compositeFeeProvider = context.getBean(CompositeFeeProvider.class);

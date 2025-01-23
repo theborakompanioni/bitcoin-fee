@@ -6,7 +6,6 @@ import org.springframework.boot.test.context.runner.ApplicationContextRunner;
 import org.tbk.bitcoin.tool.fee.bitgo.config.BitgoFeeClientAutoConfiguration;
 import org.tbk.bitcoin.tool.fee.blockchaininfo.config.BlockchainInfoFeeClientAutoConfiguration;
 import org.tbk.bitcoin.tool.fee.config.BitcoinFeeClientAutoConfiguration;
-import org.tbk.bitcoin.tool.fee.earndotcom.config.EarndotcomFeeClientAutoConfiguration;
 
 import java.time.Duration;
 import java.util.List;
@@ -23,7 +22,6 @@ class CompositeFeeProviderIntegrationTest {
     void itShouldRequestFeeRecommendationSuccessfully() {
         this.contextRunner.withUserConfiguration(
                 BitcoinFeeClientAutoConfiguration.class,
-                EarndotcomFeeClientAutoConfiguration.class,
                 BlockchainInfoFeeClientAutoConfiguration.class,
                 BitgoFeeClientAutoConfiguration.class
         ).run(context -> {

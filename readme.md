@@ -17,8 +17,6 @@ The following providers are available out of the box:
 - [x] Blockchair API
 - [x] BlockCypher API
 - [x] Blockstream.info API
-- [x] BTC.com API
-- [x] earn.com API
 - [x] mempool.space API
 
 
@@ -76,7 +74,7 @@ Then visit `http://localhost:8080` in your browser.
  
 ### Test
 ```shell script
-./gradlew test integrationTest --rerun-tasks
+./gradlew test integrationTest e2eTest --rerun-tasks
 ```
 
 ### Dependency Verification

@@ -49,7 +49,6 @@ contacts {
 }
 
 def testcontainersRyukDisabled = System.getenv("TESTCONTAINERS_RYUK_DISABLED") ?: "true"
-def isIdeEnv = System.getProperty('idea.active')
 
 configurations.configureEach {
     resolutionStrategy {
@@ -357,15 +356,6 @@ subprojects {
                 'Build-Url',
         ]
     }
-}
-
-// disable test tasks in check phase of some providers in 'bitcoin-fee-*' subprojects.
-// these providers are flaky and sometimes return errors when querying their external APIs.
-// you can invoke them manually via `./gradlew check -PfeeProviderTest`
-configure(subprojects.findAll { project -> project.name.indexOf('bitcoin-fee-estimate-btcdotcom') == 0 }) {
-    test.onlyIf { isIdeEnv || project.hasProperty('feeProviderTest') }
-    integrationTest.onlyIf { isIdeEnv || project.hasProperty('feeProviderTest') }
-    e2eTest.onlyIf { isIdeEnv || project.hasProperty('feeProviderTest') }
 }
 
 configure(subprojects.findAll { project -> project.subprojects.isEmpty() &&
