@@ -52,3 +52,6 @@ jobs:
 
       - name: Integration Test
         run: ./gradlew integrationTest
+
+      - name: End-to-end Test
+        run: ./gradlew e2eTest
