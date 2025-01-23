@@ -5,27 +5,35 @@
     <title>bitcoin fee estimation</title>
 
     <link rel="stylesheet" href="/mvp.css">
+    <style>
+        #table-container {
+            display: flex;
+            gap: 1rem;
+        }
+        #fee-table {
+          overflow-x: unset;
+        }
+        footer, header, main {
+          padding: 0.5rem 0.5rem;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <h1>bitcoin fee estimation</h1>
-</header>
-<main>
-    <div id="loading-indicator">
-    </div>
+    <header>
+        <h1>bitcoin fee estimation</h1>
+    </header>
+    <main>
+        <div id="loading-indicator"></div>
 
-    <div id="table-container">
-        <table id="fee-table">
-        </table>
+        <div id="table-container">
+            <table id="fee-table"></table>
+            <table id="provider-table"></table>
+        </div>
 
-        <table id="provider-table">
-        </table>
-    </div>
-
-    <div id="log-container">
-        <pre id="json"></pre>
-    </div>
-</main>
+        <div id="log-container">
+            <pre id="json"></pre>
+        </div>
+    </main>
 </body>
 
 <script>
@@ -110,6 +118,5 @@
         });
 
     });
-
 </script>
 </html>

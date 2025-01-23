@@ -141,7 +141,7 @@ public class FeeTableCtrl {
 
         return FeeTableResponse.newBuilder()
                 .addColumn(FeeTableResponse.Column.newBuilder()
-                        .setText("(without conf value)")
+                        .setText("sats/vbyte")
                         .build())
                 .addAllRow(rectifiedAverageValues.entrySet().stream()
                         .sorted(Comparator.comparingLong(val -> val.getKey().toMillis()))

@@ -62,6 +62,10 @@ Start the example application with
 
 Then visit `http://localhost:8080` in your browser.
 
+<p align="center">
+    <img src="https://github.com/theborakompanioni/bitcoin-fee/blob/master/docs/assets/images/screenshot.png" alt="Screenshot" />
+</p>
+
 ## Development
 
 ### Requirements
