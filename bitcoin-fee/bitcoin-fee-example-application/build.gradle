@@ -16,7 +16,6 @@ dependencies {
     implementation project(':bitcoin-fee:bitcoin-fee-estimate-blockcypher')
     implementation project(':bitcoin-fee:bitcoin-fee-estimate-blockstreaminfo')
     implementation project(':bitcoin-fee:bitcoin-fee-estimate-btcdotcom')
-    implementation project(':bitcoin-fee:bitcoin-fee-estimate-earndotcom')
     implementation project(':bitcoin-fee:bitcoin-fee-estimate-mempoolspace')
     implementation project(':bitcoin-fee:bitcoin-fee-estimate-strike')
 

@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release (externalized from bitcoin-spring-boot-starter)
 
+### Breaking
+- remove defunct 'earndotcom' fee provider
+
 ## 0.14.0 - 2024-10-22
 
 ### Added

@@ -16,7 +16,6 @@ dependencies {
     compileOnly project(':bitcoin-fee:bitcoin-fee-estimate-blockcypher')
     compileOnly project(':bitcoin-fee:bitcoin-fee-estimate-blockstreaminfo')
     compileOnly project(':bitcoin-fee:bitcoin-fee-estimate-btcdotcom')
-    compileOnly project(':bitcoin-fee:bitcoin-fee-estimate-earndotcom')
     compileOnly project(':bitcoin-fee:bitcoin-fee-estimate-mempoolspace')
     compileOnly project(':bitcoin-fee:bitcoin-fee-estimate-strike')
 
@@ -34,7 +33,6 @@ dependencies {
     testImplementation project(':bitcoin-fee:bitcoin-fee-estimate-blockcypher')
     testImplementation project(':bitcoin-fee:bitcoin-fee-estimate-blockstreaminfo')
     testImplementation project(':bitcoin-fee:bitcoin-fee-estimate-btcdotcom')
-    testImplementation project(':bitcoin-fee:bitcoin-fee-estimate-earndotcom')
     testImplementation project(':bitcoin-fee:bitcoin-fee-estimate-mempoolspace')
     testImplementation project(':bitcoin-fee:bitcoin-fee-estimate-strike')
 }
