@@ -12,7 +12,7 @@ See fee distribution: https://jochen-hoenicke.de/queue/#0,2h
  
 - [x] Bitcoin Core JSON-RPC Api (`estimatestmartfee`)
 - [x] bitcoiner.live API
-- [x] Bitgo API
+- [ ] ~~Bitgo API~~ (removed by takedown)
 - [x] Bitcore API
 - [x] Blockchain.info API (deprecated - will be removed as it is not compatible with "block target" recommendations)
 - [x] Blockchair API
@@ -56,30 +56,6 @@ Removed:
       "sat_per_vbyte": 8.0,
       [ ... ]
     },
-    [ ... ]
-  }
-}
-```
-
-
-
-### Bitgo API
-- [`https://www.bitgo.com/api/v2/btc/tx/fee`](https://www.bitgo.com/api/v2/btc/tx/fee)
-- [documentation](https://bitgo.com/api/v2/#operation/v2.tx.getfeeestimate)
-- Unit of measurement: **`sat/kB`**.  <small> (*`sat/kB / 1000 = sat/Byte`*) </small>
-- Last check: 2020-11-15
-
-```json
-{
-  "feePerKb": 61834,
-  "cpfpFeePerKb": 61834,
-  "numBlocks": 2,
-  "confidence": 80,
-  "multiplier": 1,
-  "feeByBlockTarget": {
-    "1": 64246,
-    "2": 61834,
-    "3": 56258,
     [ ... ]
   }
 }

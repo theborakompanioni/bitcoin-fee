@@ -11,7 +11,7 @@ A generalized and extensible interface of multiple Bitcoin Fee Recommendation AP
 The following providers are available out of the box:
 - [x] Bitcoin Core JSON-RPC Api (`estimatestmartfee`)
 - [x] bitcoiner.live API
-- [x] Bitgo API
+- [ ] ~~Bitgo API~~ (removed by takedown)
 - [x] Bitcore API
 - [x] Blockchain.info API (deprecated - will be removed as it is not compatible with "block target" recommendations)
 - [x] Blockchair API

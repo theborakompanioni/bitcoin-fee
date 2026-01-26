@@ -3,7 +3,7 @@ package org.tbk.bitcoin.tool.fee;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.runner.ApplicationContextRunner;
-import org.tbk.bitcoin.tool.fee.bitgo.config.BitgoFeeClientAutoConfiguration;
+import org.tbk.bitcoin.tool.fee.blockstreaminfo.config.BlockstreamInfoFeeClientAutoConfiguration;
 import org.tbk.bitcoin.tool.fee.blockchaininfo.config.BlockchainInfoFeeClientAutoConfiguration;
 import org.tbk.bitcoin.tool.fee.config.BitcoinFeeClientAutoConfiguration;
 
@@ -23,7 +23,7 @@ class CompositeFeeProviderIntegrationTest {
         this.contextRunner.withUserConfiguration(
                 BitcoinFeeClientAutoConfiguration.class,
                 BlockchainInfoFeeClientAutoConfiguration.class,
-                BitgoFeeClientAutoConfiguration.class
+                BlockstreamInfoFeeClientAutoConfiguration.class
         ).run(context -> {
             CompositeFeeProvider compositeFeeProvider = context.getBean(CompositeFeeProvider.class);
             assertThat(compositeFeeProvider, is(notNullValue()));

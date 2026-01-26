@@ -10,7 +10,6 @@ dependencies {
     api project(':bitcoin-fee:bitcoin-fee-estimate-bitcoin-jsonrpc')
     api project(':bitcoin-fee:bitcoin-fee-estimate-bitcoinerlive')
     api project(':bitcoin-fee:bitcoin-fee-estimate-bitcore')
-    api project(':bitcoin-fee:bitcoin-fee-estimate-bitgo')
     api project(':bitcoin-fee:bitcoin-fee-estimate-blockchaininfo')
     api project(':bitcoin-fee:bitcoin-fee-estimate-blockchair')
     api project(':bitcoin-fee:bitcoin-fee-estimate-blockcypher')

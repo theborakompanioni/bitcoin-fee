@@ -23,7 +23,6 @@ logging.level.org.springframework.web.servlet.mvc.method.annotation.RequestMappi
 # be aware that some providers will skew the result with rather low quality estimations.
 #org.tbk.bitcoin.tool.fee.bitcoinerlive.enabled: false
 #org.tbk.bitcoin.tool.fee.bitcore.enabled: false
-#org.tbk.bitcoin.tool.fee.bitgo.enabled: false
 #org.tbk.bitcoin.tool.fee.blockchaininfo.enabled: false
 #org.tbk.bitcoin.tool.fee.blockchair.enabled: false
 #org.tbk.bitcoin.tool.fee.blockcypher.enabled: true

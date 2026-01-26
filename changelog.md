@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Breaking
+
+- Remove module "bitcoin-fee-estimate-bitgo" (takedown request)
+
 ## 0.15.0 - 2025-01-23
 
 ### Added

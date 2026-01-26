@@ -1,7 +1,6 @@
 org.tbk.bitcoin.tool.fee.config.BitcoinFeeClientAutoConfiguration
 org.tbk.bitcoin.tool.fee.bitcoinerlive.config.BitcoinerliveFeeClientAutoConfiguration
 org.tbk.bitcoin.tool.fee.bitcore.config.BitcoreFeeClientAutoConfiguration
-org.tbk.bitcoin.tool.fee.bitgo.config.BitgoFeeClientAutoConfiguration
 org.tbk.bitcoin.tool.fee.blockchaininfo.config.BlockchainInfoFeeClientAutoConfiguration
 org.tbk.bitcoin.tool.fee.blockchair.config.BlockchairFeeClientAutoConfiguration
 org.tbk.bitcoin.tool.fee.blockcypher.config.BlockcypherFeeClientAutoConfiguration
