@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support Java v21 (remove support for Java v17)
 - Remove module "bitcoin-fee-estimate-bitgo" (takedown request)
 
+### Changed
+
+- upgrade: update spring-boot from v3.3.5 to v3.5.9
+
 ## 0.15.0 - 2025-01-23
 
 ### Added
