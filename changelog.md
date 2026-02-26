@@ -6,14 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Breaking
+## 0.16.0 - 2026-02-26
 
+### Breaking
 - Support Java v21 (remove support for Java v17)
 - Remove module "bitcoin-fee-estimate-bitgo" (takedown request)
 
 ### Changed
-
 - upgrade: update spring-boot from v3.3.5 to v3.5.9
+
 
 ## 0.15.0 - 2025-01-23
 
@@ -24,24 +25,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - remove defunct 'earndotcom' fee provider
 - remove defunct 'btcdotcom' fee provider
 
+
 ## 0.14.0 - 2024-10-22
 
 ### Added
 - fee: new module bitcoin-fee-estimate-strike
+
 
 ## 0.12.0 - 2024-01-19
 
 ### Breaking
 - move protobuf classes to own package in bitcoin-fee modules
 
+
 ## 0.10.0 - 2023-06-27
 
 ### Fixed
 - Fix json serialization of FeeRecommendationResponse in bitcoin-fee
 
+
 ## 0.1.0 - 2021-08-14
 ### Added
 - Initial release
 
-[Unreleased]: https://github.com/theborakompanioni/bitcoin-fee/compare/0.15.0...HEAD
+[Unreleased]: https://github.com/theborakompanioni/bitcoin-fee/compare/0.16.0...HEAD
+[0.16.0]: https://github.com/theborakompanioni/bitcoin-fee/compare/0.15.0...0.16.0
 [0.15.0]: https://github.com/theborakompanioni/bitcoin-fee/releases/tag/0.15.0
