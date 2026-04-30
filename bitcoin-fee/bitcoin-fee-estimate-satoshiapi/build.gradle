@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+}
+
+description = 'Satoshi API bitcoin fee client package'
+
+dependencies {
+    api project(':bitcoin-fee:bitcoin-fee-estimate-core')
+
+    implementation 'jakarta.annotation:jakarta.annotation-api'
+    implementation "org.apache.httpcomponents:httpcore:${httpComponentsVersion}"
+    implementation "org.apache.httpcomponents:httpclient:${httpComponentsClientVersion}"
+}
