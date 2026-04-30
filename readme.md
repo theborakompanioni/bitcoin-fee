@@ -18,6 +18,7 @@ The following providers are available out of the box:
 - [x] BlockCypher API
 - [x] Blockstream.info API
 - [x] mempool.space API
+- [x] Satoshi API
 
 
 ## Table of Contents

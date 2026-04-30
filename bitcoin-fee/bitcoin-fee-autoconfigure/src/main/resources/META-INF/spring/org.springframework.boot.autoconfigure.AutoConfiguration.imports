@@ -6,4 +6,5 @@ org.tbk.bitcoin.tool.fee.blockchair.config.BlockchairFeeClientAutoConfiguration
 org.tbk.bitcoin.tool.fee.blockcypher.config.BlockcypherFeeClientAutoConfiguration
 org.tbk.bitcoin.tool.fee.blockstreaminfo.config.BlockstreamInfoFeeClientAutoConfiguration
 org.tbk.bitcoin.tool.fee.mempoolspace.config.MempoolspaceFeeClientAutoConfiguration
+org.tbk.bitcoin.tool.fee.satoshiapi.config.SatoshiApiFeeClientAutoConfiguration
 org.tbk.bitcoin.tool.fee.strike.config.StrikeFeeClientAutoConfiguration

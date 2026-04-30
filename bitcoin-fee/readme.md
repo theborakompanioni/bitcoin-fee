@@ -19,6 +19,7 @@ See fee distribution: https://jochen-hoenicke.de/queue/#0,2h
 - [x] BlockCypher API
 - [x] Blockstream.info API
 - [x] mempool.space API
+- [x] Satoshi API
 - [x] Strike Blended Fee Estimate API
 
 Incubating: 
@@ -197,6 +198,31 @@ Removed:
   },
   [...]
 ]
+```
+
+### Satoshi API
+- [`https://bitcoinsapi.com/api/v1/fees/recommended`](https://bitcoinsapi.com/api/v1/fees/recommended)
+- [documentation](https://bitcoinsapi.com/docs)
+- Last check: 2026-04-30
+- Unit of measurement: **`sat/vByte`**
+
+```json
+{
+  "data": {
+    "recommendation": "Fees are very low. 1.0 sat/vB should confirm within a day.",
+    "estimates": {
+      "1": 2.129,
+      "3": 2.129,
+      "6": 2.009,
+      "25": 1.0,
+      "144": 1.0
+    }
+  },
+  "meta": {
+    "chain": "main",
+    "cached": true
+  }
+}
 ```
 
 ### Strike Blended Fee Estimate API
