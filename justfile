@@ -42,17 +42,22 @@ dependencies:
 # run unit tests
 [group("development")]
 test:
-    @./gradlew test
+    @./gradlew test --rerun-tasks
 
 # run integration tests
 [group("development")]
 test-integration:
-    @./gradlew integrationTest --rerun-tasks --no-parallel
+    @./gradlew integrationTest --rerun-tasks
+
+# run e2e tests
+[group("development")]
+test-e2e:
+    @./gradlew e2eTest --rerun-tasks
 
 # run all tests
 [group("development")]
 test-all:
-    @./gradlew test integrationTest --rerun-tasks --no-parallel
+    @./gradlew test integrationTest test-e2e --rerun-tasks --no-parallel
 
 # build javadocs
 [group("development")]
