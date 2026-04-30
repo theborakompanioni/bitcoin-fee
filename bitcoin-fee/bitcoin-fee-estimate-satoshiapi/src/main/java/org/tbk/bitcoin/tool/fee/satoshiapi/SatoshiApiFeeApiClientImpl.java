@@ -1,6 +1,7 @@
 package org.tbk.bitcoin.tool.fee.satoshiapi;
 
 import com.google.common.net.HttpHeaders;
+import jakarta.annotation.PreDestroy;
 import lombok.SneakyThrows;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
@@ -10,6 +11,7 @@ import org.tbk.bitcoin.tool.fee.satoshiapi.proto.RecommendedFeesResponse;
 import org.tbk.bitcoin.tool.fee.util.MoreHttpClient;
 import org.tbk.bitcoin.tool.fee.util.MoreJsonFormat;
 
+import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Optional;
@@ -49,6 +51,12 @@ public class SatoshiApiFeeApiClientImpl implements SatoshiApiFeeApiClient {
 
         String json = MoreHttpClient.executeToJson(client, request);
         return MoreJsonFormat.jsonToProto(json, RecommendedFeesResponse.newBuilder()).build();
+    }
+
+    @PreDestroy
+    @SneakyThrows(IOException.class)
+    void destroy() {
+        client.close();
     }
 
     private Optional<String> getApiToken() {
