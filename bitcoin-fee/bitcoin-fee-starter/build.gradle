@@ -15,6 +15,7 @@ dependencies {
     api project(':bitcoin-fee:bitcoin-fee-estimate-blockcypher')
     api project(':bitcoin-fee:bitcoin-fee-estimate-blockstreaminfo')
     api project(':bitcoin-fee:bitcoin-fee-estimate-mempoolspace')
+    api project(':bitcoin-fee:bitcoin-fee-estimate-satoshiapi')
     api project(':bitcoin-fee:bitcoin-fee-estimate-strike')
 
     api project(':bitcoin-fee:bitcoin-fee-autoconfigure')
