@@ -55,12 +55,14 @@ class SatoshiApiFeeApiClientImplTest {
 
         String baseUrl = "http://localhost:" + this.server.getAddress().getPort();
 
-        RecommendedFeesResponse response = new SatoshiApiFeeApiClientImpl(baseUrl, null).feesRecommended();
+        try (SatoshiApiFeeApiClientImpl client = new SatoshiApiFeeApiClientImpl(baseUrl, null)) {
+            RecommendedFeesResponse response = client.feesRecommended();
 
-        assertThat(response.getData().getRecommendation(), is("Fees are low."));
-        assertThat(response.getData().getEstimatesOrThrow("1"), is(closeTo(12.5d, 0.0001d)));
-        assertThat(response.getData().getEstimatesOrThrow("3"), is(closeTo(7.25d, 0.0001d)));
-        assertThat(response.getData().getEstimatesOrThrow("6"), is(closeTo(4.0d, 0.0001d)));
+            assertThat(response.getData().getRecommendation(), is("Fees are low."));
+            assertThat(response.getData().getEstimatesOrThrow("1"), is(closeTo(12.5d, 0.0001d)));
+            assertThat(response.getData().getEstimatesOrThrow("3"), is(closeTo(7.25d, 0.0001d)));
+            assertThat(response.getData().getEstimatesOrThrow("6"), is(closeTo(4.0d, 0.0001d)));
+        }
     }
 
     @Test
@@ -87,7 +89,7 @@ class SatoshiApiFeeApiClientImplTest {
         String baseUrl = "http://localhost:" + this.server.getAddress().getPort();
 
         SatoshiApiFeeApiClientImpl client = new SatoshiApiFeeApiClientImpl(baseUrl, null);
-        client.destroy();
+        client.close();
 
         assertThrows(RuntimeException.class, client::feesRecommended);
     }

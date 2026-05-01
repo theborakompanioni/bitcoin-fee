@@ -11,6 +11,7 @@ import org.tbk.bitcoin.tool.fee.satoshiapi.proto.RecommendedFeesResponse;
 import org.tbk.bitcoin.tool.fee.util.MoreHttpClient;
 import org.tbk.bitcoin.tool.fee.util.MoreJsonFormat;
 
+import java.io.Closeable;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -18,7 +19,7 @@ import java.util.Optional;
 
 import static java.util.Objects.requireNonNull;
 
-public class SatoshiApiFeeApiClientImpl implements SatoshiApiFeeApiClient {
+public class SatoshiApiFeeApiClientImpl implements SatoshiApiFeeApiClient, Closeable {
     private static final String DEFAULT_VERSION = Optional.ofNullable(SatoshiApiFeeApiClientImpl.class
             .getPackage()
             .getImplementationVersion()
@@ -55,7 +56,8 @@ public class SatoshiApiFeeApiClientImpl implements SatoshiApiFeeApiClient {
 
     @PreDestroy
     @SneakyThrows(IOException.class)
-    void destroy() {
+    @Override
+    public void close() {
         client.close();
     }
 
