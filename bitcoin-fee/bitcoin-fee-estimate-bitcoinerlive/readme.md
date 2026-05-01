@@ -1,6 +1,6 @@
 
 ```shell
-curl -L -X GET https://bitcoiner.live/api/fees/estimates/latest
+curl --request GET https://bitcoiner.live/api/fees/estimates/latest
 ```
 ```json
 {

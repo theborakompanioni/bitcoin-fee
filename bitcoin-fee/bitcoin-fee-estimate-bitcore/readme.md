@@ -1,6 +1,6 @@
 
 ```shell
-curl -L -X GET https://api.bitcore.io/api/BTC/mainnet/fee/1
+curl --request GET https://api.bitcore.io/api/BTC/mainnet/fee/1
 ```
 ```json
 {

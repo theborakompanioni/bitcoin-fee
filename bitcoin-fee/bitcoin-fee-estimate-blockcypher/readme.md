@@ -1,6 +1,6 @@
 
 ```shell
-curl -L -X GET https://api.blockcypher.com/v1/btc/main
+curl --request GET https://api.blockcypher.com/v1/btc/main
 ```
 ```json
 {

@@ -1,6 +1,6 @@
 
 ```shell
-curl -L -X GET https://mempool.space/api/v1/fees/recommended
+curl --request GET https://mempool.space/api/v1/fees/recommended
 ```
 ```json
 {

@@ -1,6 +1,6 @@
 
 ```shell
-curl -L -X GET https://api.blockchair.com/bitcoin/stats
+curl --request GET https://api.blockchair.com/bitcoin/stats
 ```
 ```json
 {

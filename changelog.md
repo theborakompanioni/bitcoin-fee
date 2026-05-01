@@ -5,9 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- fee: new module bitcoin-fee-estimate-satoshiapi
 
 ## 0.16.0 - 2026-02-26
-
 ### Breaking
 - Support Java v21 (remove support for Java v17)
 - Remove module "bitcoin-fee-estimate-bitgo" (takedown request)
@@ -17,7 +18,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## 0.15.0 - 2025-01-23
-
 ### Added
 - Initial release (externalized from bitcoin-spring-boot-starter)
 
@@ -27,19 +27,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## 0.14.0 - 2024-10-22
-
 ### Added
 - fee: new module bitcoin-fee-estimate-strike
 
 
 ## 0.12.0 - 2024-01-19
-
 ### Breaking
 - move protobuf classes to own package in bitcoin-fee modules
 
 
 ## 0.10.0 - 2023-06-27
-
 ### Fixed
 - Fix json serialization of FeeRecommendationResponse in bitcoin-fee
 

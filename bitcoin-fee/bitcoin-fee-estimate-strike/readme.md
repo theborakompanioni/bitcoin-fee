@@ -1,6 +1,6 @@
 
 ```shell
-curl -L -X GET https://bitcoinchainfees.strike.me/v1/fee-estimates
+curl --request GET https://bitcoinchainfees.strike.me/v1/fee-estimates
 ```
 ```json
 {

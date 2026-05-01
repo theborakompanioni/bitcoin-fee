@@ -1,6 +1,6 @@
 
 ```shell
-curl -L -X GET https://blockstream.info/api/fee-estimates
+curl --request GET https://blockstream.info/api/fee-estimates
 ```
 ```json
 {
