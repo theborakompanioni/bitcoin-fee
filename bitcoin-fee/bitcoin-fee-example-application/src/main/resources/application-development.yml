@@ -1,6 +1,8 @@
 app.name: tbk-bitcoin-fee-demo (dev)
 app.description: A spring boot bitcoin demo application
 
+debug: true
+
 spring.application.name: 'tbk-bitcoin-fee-demo-dev'
 spring.http.log-request-details: false
 spring.threads.virtual.enabled: true

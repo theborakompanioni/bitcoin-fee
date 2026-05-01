@@ -35,7 +35,7 @@ class SatoshiApiFeeProviderTest {
 
     @Test
     void itShouldNotSupportConfidenceBasedRequests() {
-        SatoshiApiFeeProvider sut = new SatoshiApiFeeProvider(() -> RecommendedFeesResponse.getDefaultInstance());
+        SatoshiApiFeeProvider sut = new SatoshiApiFeeProvider(RecommendedFeesResponse::getDefaultInstance);
 
         boolean supports = sut.supports(FeeRecommendationRequestImpl.builder()
                 .durationTarget(Duration.ofMinutes(30))
