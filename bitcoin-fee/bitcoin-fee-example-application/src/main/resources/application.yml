@@ -27,3 +27,4 @@ logging.level.org.springframework.web.servlet.mvc.method.annotation.RequestMappi
 #org.tbk.bitcoin.tool.fee.blockchair.enabled: false
 #org.tbk.bitcoin.tool.fee.blockcypher.enabled: true
 #org.tbk.bitcoin.tool.fee.blockstreaminfo.enabled: false
+#org.tbk.bitcoin.tool.fee.satoshiapi.enabled: false
