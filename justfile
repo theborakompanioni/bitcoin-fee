@@ -57,7 +57,7 @@ test-e2e:
 # run all tests
 [group("development")]
 test-all:
-    @./gradlew test integrationTest test-e2e --rerun-tasks --no-parallel
+    @./gradlew test integrationTest e2eTest --rerun-tasks --no-parallel
 
 # build javadocs
 [group("development")]
@@ -88,3 +88,4 @@ spotbugs:
 [group("development")]
 lint:
     @./gradlew autoLintGradle --no-parallel
+
