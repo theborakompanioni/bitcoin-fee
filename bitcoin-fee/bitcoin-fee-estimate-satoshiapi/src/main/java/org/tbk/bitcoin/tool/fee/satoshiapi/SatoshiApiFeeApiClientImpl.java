@@ -55,9 +55,8 @@ public class SatoshiApiFeeApiClientImpl implements SatoshiApiFeeApiClient, Close
     }
 
     @PreDestroy
-    @SneakyThrows(IOException.class)
     @Override
-    public void close() {
+    public void close() throws IOException {
         client.close();
     }
 

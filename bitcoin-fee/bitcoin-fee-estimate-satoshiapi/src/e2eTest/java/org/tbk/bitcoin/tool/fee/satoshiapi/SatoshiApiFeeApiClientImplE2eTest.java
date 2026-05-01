@@ -1,8 +1,11 @@
 package org.tbk.bitcoin.tool.fee.satoshiapi;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.tbk.bitcoin.tool.fee.satoshiapi.proto.RecommendedFeesResponse;
+
+import java.io.IOException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
@@ -13,8 +16,13 @@ class SatoshiApiFeeApiClientImplE2eTest {
     private SatoshiApiFeeApiClientImpl sut;
 
     @BeforeEach
-    void setUp() {
+    void beforeEach() {
         this.sut = new SatoshiApiFeeApiClientImpl(BASE_URL, null);
+    }
+
+    @AfterEach
+    void afterEach() throws IOException {
+        this.sut.close();
     }
 
     @Test
@@ -22,7 +30,6 @@ class SatoshiApiFeeApiClientImplE2eTest {
         RecommendedFeesResponse feesRecommended = this.sut.feesRecommended();
 
         assertThat(feesRecommended, is(notNullValue()));
-
         assertThat(feesRecommended.getData().getEstimatesOrThrow("1"), is(greaterThanOrEqualTo(0d)));
     }
 }
