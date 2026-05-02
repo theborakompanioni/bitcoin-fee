@@ -13,7 +13,7 @@ ext {
     findsecbugsPluginVersion = '1.14.0'
     springBootGradlePluginVersion = '3.5.14'
     bitcoinSpringBootStarterVersion = '0.16.0'
-    protobufGradleVersion = '0.9.6'
+    protobufGradleVersion = '0.10.0'
 }
 
 // hack: 2021-11-10T00:00Z - change this timestamp to invalidate GitHub Actions gradle caches.
