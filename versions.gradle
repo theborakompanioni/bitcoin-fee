@@ -9,7 +9,7 @@ ext {
     bytebuddyPluginVersion = '1.18.8' // keep in sync with `jmoleculesBomVersion`
     lombokVersion = '1.18.46'
     springdocOpenApiVersion = '2.8.17'
-    checkstyleVersion = '13.5.0'
+    checkstyleVersion = '13.6.0'
     findsecbugsPluginVersion = '1.14.0'
     springBootGradlePluginVersion = '3.5.14'
     bitcoinSpringBootStarterVersion = '0.16.0'
