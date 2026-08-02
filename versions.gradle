@@ -6,7 +6,7 @@ ext {
     protobufVersion = '4.35.0'
     protocVersion = protobufVersion
     jmoleculesBomVersion = '2025.0.2'
-    bytebuddyPluginVersion = '1.18.8' // keep in sync with `jmoleculesBomVersion`
+    bytebuddyPluginVersion = '1.18.11' // keep in sync with `jmoleculesBomVersion`
     lombokVersion = '1.18.46'
     springdocOpenApiVersion = '2.9.0'
     checkstyleVersion = '13.9.0'
