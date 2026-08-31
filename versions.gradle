@@ -3,7 +3,7 @@ ext {
     httpComponentsVersion = '4.4.16'
     httpComponentsClientVersion = '4.5.14'
     grpcVersion = '1.83.1'
-    protobufVersion = '4.36.0'
+    protobufVersion = '4.36.1'
     protocVersion = protobufVersion
     jmoleculesBomVersion = '2025.0.2'
     bytebuddyPluginVersion = '1.18.12' // keep in sync with `jmoleculesBomVersion`
