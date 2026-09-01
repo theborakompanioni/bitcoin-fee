@@ -2,7 +2,7 @@ ext {
     guavaVersion = '33.7.1-jre'
     httpComponentsVersion = '4.4.16'
     httpComponentsClientVersion = '4.5.14'
-    grpcVersion = '1.83.1'
+    grpcVersion = '1.84.0'
     protobufVersion = '4.36.1'
     protocVersion = protobufVersion
     jmoleculesBomVersion = '2025.0.2'
